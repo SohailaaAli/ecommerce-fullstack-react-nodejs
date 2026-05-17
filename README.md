@@ -1,244 +1,244 @@
-<h1>🛒 ShopEase - Full-Stack E-Commerce Website</h1>
+# 🛒 ShopEase - Full-Stack E-Commerce Website
 
-<p>
-    ShopEase is a fully functional e-commerce platform built with the <strong>MERN stack</strong> (MongoDB, Express, React, Node.js).
-    It includes essential e-commerce features like product browsing, filtering, user authentication, order management, and secure online payments using <strong>Stripe</strong>.
-    The project also includes a complete admin dashboard for managing products, categories, and customer orders.
-</p>
+ShopEase is a modern and fully functional **E-Commerce Platform** built using the **MERN Stack**  
+(**MongoDB, Express.js, React.js, Node.js**).
 
-<hr>
+The platform provides a complete shopping experience for customers along with a powerful admin dashboard for managing products, categories, and customer orders.
 
-<h2>🚀 Features</h2>
+---
 
-<h3>✅ User Features</h3>
-<ul>
-    <li>🏠 <strong>Home Page</strong> – Browse featured and latest products.</li>
-    <li>🔍 <strong>Product Listing</strong> – Filter products by category, subcategory, and price.</li>
-    <li>🛒 <strong>Shopping Cart</strong> – Add, remove, and update cart items easily.</li>
-    <li>💳 <strong>Stripe Payment</strong> – Secure online checkout using Stripe.</li>
-    <li>📦 <strong>Order History</strong> – View previous orders and track order status.</li>
-    <li>🔐 <strong>Authentication System</strong> – User registration and login using JWT.</li>
-</ul>
+# 🚀 Features
 
-<h3>🔑 Admin Features</h3>
-<ul>
-    <li>📦 <strong>Product Management</strong> – Add, edit, and delete products.</li>
-    <li>📊 <strong>Order Management</strong> – Manage customer orders and update delivery status.</li>
-    <li>🏷 <strong>Category Management</strong> – Manage categories and subcategories.</li>
-</ul>
+## ✅ User Features
 
-<hr>
+- 🏠 Browse featured and latest products
+- 🔍 Filter products by category, subcategory, and price
+- 🛒 Add, remove, and update cart items
+- 💳 Secure online payments using Stripe
+- 📦 View order history and order status
+- 🔐 User authentication using JWT
+- ❤️ Responsive modern UI
 
-<h2>💡 Tech Stack</h2>
+---
 
-<h3>Frontend</h3>
-<ul>
-    <li>React.js</li>
-    <li>Redux Toolkit</li>
-    <li>Axios</li>
-    <li>React Router</li>
-    <li>Tailwind CSS / CSS</li>
-</ul>
+## 🔑 Admin Features
 
-<h3>Backend</h3>
-<ul>
-    <li>Node.js</li>
-    <li>Express.js</li>
-    <li>MongoDB with Mongoose</li>
-</ul>
+- 📦 Add, edit, and delete products
+- 📊 Manage customer orders
+- 🏷 Manage categories and subcategories
+- ☁ Upload product images using Cloudinary
+- 🔒 Secure admin authentication
 
-<h3>Authentication & Security</h3>
-<ul>
-    <li>JWT Authentication</li>
-    <li>bcrypt Password Hashing</li>
-</ul>
+---
 
-<h3>Payment Integration</h3>
-<ul>
-    <li>Stripe Payment Gateway</li>
-</ul>
+# 💡 Tech Stack
 
-<hr>
+## Frontend
 
-<h2>🛠 Installation</h2>
+- React.js
+- Redux Toolkit
+- Axios
+- React Router DOM
+- Tailwind CSS
 
-<h3>1. Clone the Repository</h3>
+---
 
-<pre>
-<code>
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+---
+
+## Authentication & Security
+
+- JWT Authentication
+- bcrypt Password Hashing
+
+---
+
+## Payment Integration
+
+- Stripe Payment Gateway
+
+---
+
+## Cloud Storage
+
+- Cloudinary
+
+---
+
+# 🛠 Installation & Setup
+
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/ecommerce-fullstack-react-nodejs.git
+
 cd ecommerce-fullstack-react-nodejs
-</code>
-</pre>
+```
 
-<h3>2. Install Dependencies</h3>
+---
 
-<strong>Frontend</strong>
+## 2️⃣ Install Dependencies
 
-<pre>
-<code>
-cd frontend
-npm install
-</code>
-</pre>
+### 📌 Backend
 
-<strong>Backend</strong>
-
-<pre>
-<code>
+```bash
 cd backend
 npm install
-</code>
-</pre>
+```
 
-<strong>Admin Panel</strong>
+### 📌 Frontend
 
-<pre>
-<code>
+```bash
+cd frontend
+npm install
+```
+
+### 📌 Admin Panel
+
+```bash
 cd admin
 npm install
-</code>
-</pre>
+```
 
-<hr>
+---
 
-<h2>⚙️ Environment Variables</h2>
+# ⚙️ Environment Variables
 
-<h3>Create <code>.env</code> file inside the <code>backend</code> folder</h3>
+## 📌 Backend `.env`
 
-<pre>
-<code>
-PORT=3000
-MONGO_URI=mongodb://localhost:27017
-JWT_SECRET=your-access-secret-min-32-chars
+Create a `.env` file inside the `backend` folder and add the following:
 
-STRIPE_SECRET_KEY=
+```env
+# Enter your backend port
+PORT=your_backend_port
 
-CLOUDINARY_NAME=
-CLOUDINARY_API_KEY=5
-CLOUDINARY_SECRET_KEY=
+# Enter your MongoDB connection string
+MONGO_URI=your_mongodb_connection_string
 
-ADMIN_EMAIL=admin@gmail.com
-ADMIN_PASSWORD=123456
-</code>
-</pre>
+# Enter your JWT secret key
+JWT_SECRET=your_jwt_secret_key
 
-<h3>Create <code>.env</code> file inside the <code>frontend</code> folder</h3>
+# Enter your Stripe secret key
+STRIPE_SECRET_KEY=your_stripe_secret_key
 
-<pre>
-<code>
-VITE_BACKEND_URL=http://localhost:3000
-</code>
-</pre>
+# Enter your Cloudinary cloud name
+CLOUDINARY_NAME=your_cloudinary_name
 
-<h3>Create <code>.env</code> file inside the <code>admin</code> folder</h3>
+# Enter your Cloudinary API key
+CLOUDINARY_API_KEY=your_cloudinary_api_key
 
-<pre>
-<code>
-VITE_BACKEND_URL=http://localhost:3000
-</code>
-</pre>
+# Enter your Cloudinary secret key
+CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
 
-<hr>
+# Enter your admin email
+ADMIN_EMAIL=your_admin_email
 
-<h2>🚀 Run the Project</h2>
+# Enter your admin password
+ADMIN_PASSWORD=your_admin_password
+```
 
-<h3>Backend</h3>
+---
 
-<pre>
-<code>
+## 📌 Frontend `.env`
+
+Create a `.env` file inside the `frontend` folder and add the following:
+
+```env
+# Enter your backend API URL
+VITE_BACKEND_URL=your_backend_api_url
+```
+
+---
+
+## 📌 Admin `.env`
+
+Create a `.env` file inside the `admin` folder and add the following:
+
+```env
+# Enter your backend API URL
+VITE_BACKEND_URL=your_backend_api_url
+```
+
+---
+
+# 🚀 Run the Project
+
+## ▶ Run Backend
+
+```bash
 cd backend
 npm run server
-</code>
-</pre>
+```
 
-<h3>Frontend</h3>
+---
 
-<pre>
-<code>
+## ▶ Run Frontend
+
+```bash
 cd frontend
 npm run dev
-</code>
-</pre>
+```
 
-<h3>Admin Panel</h3>
+---
 
-<pre>
-<code>
+## ▶ Run Admin Panel
+
+```bash
 cd admin
 npm run dev
-</code>
-</pre>
+```
 
-<hr>
+---
 
-<h2>🚦 Usage</h2>
+# 🌐 Default Local URLs
 
-<ol>
-    <li>Open the frontend application in your browser.</li>
-    <li>Create an account or login.</li>
-    <li>Browse products and add items to your cart.</li>
-    <li>Proceed to checkout and pay securely using Stripe.</li>
-    <li>Admins can login to the admin dashboard to manage products and orders.</li>
-</ol>
+| Service | URL |
+|----------|------|
+| Frontend | http://localhost:5173 |
+| Admin Panel | http://localhost:5174 |
+| Backend API | http://localhost:3000 |
 
-<hr>
+---
 
-<h2>📸 Screenshots</h2>
+# 📸 Screenshots
 
-<table>
-    <tr>
-        <th>Home Page</th>
-        <th>Products</th>
-        <th>Admin Dashboard</th>
-    </tr>
+| Home Page | Products Page | Admin Dashboard |
+|------------|----------------|------------------|
+| ![](./screenshots/home.png) | ![](./screenshots/products.png) | ![](./screenshots/admin.png) |
 
-    <tr>
-        <td>
-            <img src="./screenshots/home.png" width="300" />
-        </td>
+---
 
-        <td>
-            <img src="./screenshots/products.png" width="300" />
-        </td>
+# 🚀 Future Improvements
 
-        <td>
-            <img src="./screenshots/admin.png" width="300" />
-        </td>
-    </tr>
-</table>
+- ⭐ Product reviews and ratings
+- ❤️ Wishlist functionality
+- 📍 Real-time order tracking
+- 📱 Progressive Web App (PWA)
+- 🌍 Multi-language support
+- 🔔 Notifications system
 
-<hr>
+---
 
-<h2>🚀 Future Improvements</h2>
+# 🤝 Contributing
 
-<ul>
-    <li>⭐ Product reviews and ratings</li>
-    <li>📍 Real-time order tracking</li>
-    <li>❤️ Wishlist functionality</li>
-    <li>📱 Progressive Web App (PWA)</li>
-    <li>🌍 Multi-language support</li>
-</ul>
+Contributions are welcome!
 
-<hr>
+Feel free to fork the repository and submit a pull request.
 
-<h2>🤝 Contributing</h2>
+---
 
-<p>
-    Contributions are welcome!
-    Feel free to fork the repository and submit a pull request.
-</p>
+# 🛡 License
 
-<hr>
+This project is licensed under the **MIT License**.
 
-<h2>🛡 License</h2>
+---
 
-<p>
-    This project is licensed under the <strong>MIT License</strong>.
-</p>
+# ⭐ Support
 
-<hr>
-
-<p align="center">
-    <strong>⭐ If you like this project, don't forget to give it a star! 🌟</strong>
-</p>
+If you like this project, don't forget to give it a **Star ⭐** on GitHub.
